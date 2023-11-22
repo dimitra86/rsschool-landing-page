@@ -4,6 +4,7 @@ html {
 
 body {
   background-color: #E1D4C9;
+  font-family: Inter, serif;
 }
 
 .wrapper {
@@ -15,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 17px 0;
 }
 
 nav ul {
@@ -31,6 +33,15 @@ nav ul li a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  cursor: pointer;
+}
+nav ul li :hover {
+  text-decoration: underline 2px;
+}
+
+.coffeeMenu {
+  display: flex;
+  gap: 8px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -6,7 +6,7 @@ $background-container:#665F55
 $background-backdrop:rgba(64, 63, 61, 0.80)
 $border-light:#C1B6AD
 $border-dark:#665F55
-$font-stack: Inter, sans-serif
+$font-stack: Inter, serif
 
 html 
   scroll-behavior: smooth
@@ -14,7 +14,7 @@ html
 
 body
   background-color:$background-body
-  
+  font-family: $font-stack
   
 
 .wrapper
@@ -25,6 +25,7 @@ body
   display: flex
   justify-content: space-between
   align-items: center
+  margin: 17px 0
 
 nav ul
   display: flex
@@ -38,5 +39,13 @@ nav ul
       font-style: normal
       font-weight: 600
       line-height: 150%
+      cursor: pointer
+    :hover
+      text-decoration: underline 2px
+
       
+      
+.coffeeMenu
+  display: flex
+  gap: 8px
 
