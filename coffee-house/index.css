@@ -12,11 +12,12 @@ body {
   margin: 0 auto;
 }
 
+/*header css*/ 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 17px 0;
+  margin: 17px 0 20px 0;
 }
 
 nav ul {
@@ -42,6 +43,61 @@ nav ul li :hover {
 .coffeeMenu {
   display: flex;
   gap: 8px;
+}
+
+/*welcom css*/
+.welcom {
+  background-image: url(/assets/img/53de184b52e70f8c6142237a41f29303.jpeg);
+  border-radius: 42px;
+  height: 644px;
+  background-position: -40px -35px;
+  background-repeat: no-repeat;
+}
+
+i {
+  color: #B0907A;
+}
+
+h2 {
+  color: #E1D4C9;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+  margin: 0;
+}
+
+.welcomText {
+  height: 444px;
+  width: 530px;
+  display: flex;
+  margin: 100px 0 0 100px;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+}
+
+p {
+  color: #E1D4C9;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+.btnMenu {
+  background-color: #E1D4C9;
+  width: 200px;
+  height: 64px;
+  border-radius: 50px;
+  border: 0px;
+}
+.btnMenu img {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
