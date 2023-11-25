@@ -256,4 +256,69 @@ hr {
   background-position: -33px -68px;
 }
 
+/*css mobile app*/
+.mobileApp {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin: 100px 0 0 0;
+}
+
+.mobileAppText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobileAppHead {
+  text-align: justify;
+  padding-top: 44px;
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+}
+
+.AppText {
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.btnApple,
+.btnGoogle {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #665F55;
+}
+
+.buttonText {
+  color: #403F3D;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.buttonText b {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.mobileAppBtn {
+  display: flex;
+  gap: 20px;
+}
+
 /*# sourceMappingURL=index.css.map */
