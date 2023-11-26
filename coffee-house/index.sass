@@ -284,6 +284,20 @@ hr
   gap: 8px
   border-radius: 100px
   border: 1px solid $border-dark
+  cursor: pointer
+  transition-duration: 0.4s
+
+.mobileAppBtn
+  button:hover
+    
+    background: $background-container
+    // opacity: 0.6
+    .buttonText
+      color: $text-light
+    img
+      // background-image: url(./assets/img/icon_google_light.png)
+    
+
 
 .buttonText
   color: $text-dark
@@ -294,6 +308,7 @@ hr
   font-style: normal
   font-weight: 600
   line-height: 140%
+  transition-duration: 0.4s
   b
     font-size: 16px
     font-style: normal
@@ -345,6 +360,19 @@ hr
   li
     list-style: none
 
+.socialMediaS
+  li
+    a
+      img:hover
+        // background-color: $background-body
+        color: $text-dark
+        opacity: 0.5
+        border-radius: 100px
+        transition-duration: 0.4s
+        // flex-shrink: 0
+        // text-decoration: none
+
+
 .socialMedia
   margin: 40px 0 0 0
 
@@ -373,6 +401,15 @@ hr
     font-style: normal
     font-weight: 600
     line-height: 150%
+    transition-duration: 0.4s
+    ::before
+      transition: transform 300ms ease-in-out
+      transform: scaleX(0)
+    :hover::before
+      transform: scaleX(1)
+    :focus::before
+      transform: scaleX(1)
+
 
 .contactInfoTel
   a
@@ -384,6 +421,7 @@ hr
     font-style: normal
     font-weight: 600
     line-height: 150%
+    
 
 .jobTime
   display: flex

@@ -297,8 +297,16 @@ hr {
   gap: 8px;
   border-radius: 100px;
   border: 1px solid #665F55;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
+.mobileAppBtn button:hover {
+  background: #665F55;
+}
+.mobileAppBtn button:hover .buttonText {
+  color: #E1D4C9;
+}
 .buttonText {
   color: #403F3D;
   text-align: center;
@@ -308,6 +316,7 @@ hr {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
+  transition-duration: 0.4s;
 }
 .buttonText b {
   font-size: 16px;
@@ -368,6 +377,13 @@ hr {
   list-style: none;
 }
 
+.socialMediaS li a img:hover {
+  color: #403F3D;
+  opacity: 0.5;
+  border-radius: 100px;
+  transition-duration: 0.4s;
+}
+
 .socialMedia {
   margin: 40px 0 0 0;
 }
@@ -398,6 +414,17 @@ hr {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition-duration: 0.4s;
+}
+.contactInfoAddres a ::before {
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
+.contactInfoAddres a :hover::before {
+  transform: scaleX(1);
+}
+.contactInfoAddres a :focus::before {
+  transform: scaleX(1);
 }
 
 .contactInfoTel a {
