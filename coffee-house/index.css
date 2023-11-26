@@ -37,12 +37,30 @@ nav ul li a {
   cursor: pointer;
 }
 nav ul li :hover {
-  text-decoration: underline 2px;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  transition-duration: 0.4s;
 }
 
 .coffeeMenu {
   display: flex;
   gap: 8px;
+}
+.coffeeMenu a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.coffeeMenu :hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  transition-duration: 0.4s;
 }
 
 /*welcom css*/
@@ -297,8 +315,16 @@ hr {
   gap: 8px;
   border-radius: 100px;
   border: 1px solid #665F55;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
+.mobileAppBtn button:hover {
+  background: #665F55;
+}
+.mobileAppBtn button:hover .buttonText {
+  color: #E1D4C9;
+}
 .buttonText {
   color: #403F3D;
   text-align: center;
@@ -308,6 +334,7 @@ hr {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
+  transition-duration: 0.4s;
 }
 .buttonText b {
   font-size: 16px;
@@ -368,6 +395,13 @@ hr {
   list-style: none;
 }
 
+.socialMediaS li a img:hover {
+  background-color: #E1D4C9;
+  color: #403F3D;
+  border-radius: 100px;
+  transition-duration: 0.4s;
+}
+
 .socialMedia {
   margin: 40px 0 0 0;
 }
@@ -398,6 +432,17 @@ hr {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition-duration: 0.4s;
+}
+.contactInfoAddres a ::before {
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
+.contactInfoAddres a :hover::before {
+  transform: scaleX(1);
+}
+.contactInfoAddres a :focus::before {
+  transform: scaleX(1);
 }
 
 .contactInfoTel a {
@@ -429,4 +474,151 @@ hr {
   width: 20px;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*css menu*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.menuH3 {
+  margin: 0;
+}
+
+.coffeeTab {
+  display: flex;
+  border-radius: 100px;
+  background: #665F55;
+  padding: 8px 16px 8px 8px;
+  gap: 8px;
+}
+.coffeeTab img {
+  padding: 3px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #E1D4C9;
+  width: 16px;
+  height: 24px;
+}
+.coffeeTab p {
+  color: #E1D4C9;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 3px;
+}
+
+.teaTab {
+  display: flex;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  padding: 8px 16px 8px 8px;
+  gap: 8px;
+  cursor: pointer;
+}
+.teaTab img {
+  padding: 3px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #C1B6AD;
+  width: 16px;
+  height: 24px;
+}
+.teaTab p {
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 3px;
+}
+.teaTab:hover {
+  background: #665F55;
+}
+.teaTab:hover p {
+  color: #E1D4C9;
+}
+
+.menuTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.dessertTab {
+  display: flex;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  padding: 8px 16px 8px 8px;
+  gap: 8px;
+  cursor: pointer;
+}
+.dessertTab img {
+  padding: 3px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #C1B6AD;
+  width: 16px;
+  height: 24px;
+}
+.dessertTab p {
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 3px;
+}
+.dessertTab:hover {
+  background: #665F55;
+}
+.dessertTab:hover p {
+  color: #E1D4C9;
+}
+
+.menuCards {
+  display: flex;
+  gap: 37px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  border-radius: 40px;
+  border: 1px solid #C1B6AD;
+  width: 310px;
+}
+.cards img {
+  border-radius: 40px;
+  width: 310px;
+}
+
+.cardsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 16px 20px 20px 20px;
+  gap: 12px;
+}
+
+.cardText {
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  height: 72px;
+}/*# sourceMappingURL=index.css.map */
