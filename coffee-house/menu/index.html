@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../normalize.css" />
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Coffee-House</title>
 </head>
@@ -16,7 +16,7 @@
         <header class="header">
 
             <div class="logo">
-                <img src="./assets/img/logo.svg" alt="logo" class="imgLogo">
+                <a href="../index.html"><img src="../assets/img/logo.svg" alt="logo" class="imgLogo"></a>
             </div>
             <nav>
                 <ul>
@@ -28,73 +28,92 @@
             </nav>
             <div class="coffeeMenu">
                 <a href="./menu/index.html">Menu</a>
-                <img src="./assets/img/coffee-cup.svg" alt="coffeeMenu">
+                <img src="../assets/img/coffee-cup.svg" alt="coffeeMenu">
             </div>
 
         </header>
         <main>
-            <div class="welcom">
-                <div class="welcomText">
-                    <h2><i>Enjoy</i> premium coffee at our charming cafe</h2>
-                    <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
-                        destination for coffee lovers and those seeking a warm and inviting space to enjoy their
-                        favorite beverage.</p>
-                    <button class="btnMenu">
-                        Menu
-                        <img src="./assets/img/coffee-cup.svg" alt="coffeeMenu">
-                    </button>
-                </div>
-
-            </div>
-            <div class="favoriteCoffee">
-                <h3>Choose your <i>favorite</i> coffee</h3>
-                <div class="slider">
-                    <img src="./assets/img/button_right_arrow.png" alt="buttonLeftArrow" class="sliderLeft">
-                    <div class="slides">
-                        <img src="./assets/img/coffee-slider-1.svg" alt="coffee-slider-1">
-                        <h4>S’mores Frappuccino</h4>
-                        <p class="sliderText">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                        <h4>$5.50</h4>
+            <div class="menu">
+                <h3 class="menuH3">Behind each of our cups<br> hides an <i>amazing surprise</i></h3>
+                <div class="menuTab">
+                    <div class="coffeeTab">
+                        <img src="../assets/img/coffee_menu.png" alt="coffee">
+                        <p>Coffee</p>
                     </div>
-                    <img src="./assets/img/button_right_arrow.png" alt="buttonRightArrow" class="sliderRight">
-                </div>
-                <div class="carousel">
-                    <div class="btnCarousel active"></div>
-                    <div class="btnCarousel"></div>
-                    <div class="btnCarousel"></div>
-                </div>
-            </div>
-            <div class="about">
-                <h3 class="aboutHead">Resource is <i>the perfect and cozy place</i> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h3>
-                <div class="aboutImages">
-                    <div class="aboutImages1">
-                        <div class="aboutImg image1"></div>
-                        <div class="aboutImg image2"></div>
+                    <div class="teaTab">
+                        <img src="../assets/img/tea_menu.png" alt="tea">
+                        <p>Tea</p>
                     </div>
-                    <div class="aboutImages2">
-                        <div class="aboutImg image3"></div>
-                        <div class="aboutImg image4"></div>
+                    <div class="dessertTab">
+                        <img src="../assets/img/dessert_menu.png" alt="dessert">
+                        <p>Dessert</p>
                     </div>
                 </div>
-            </div>
-            <div class="mobileApp">
-                <div class="mobileAppText">
-                    <h3 class="mobileAppHead"><i>Download</i> our apps <br>to start ordering</h3>
-                    <p class="AppText">Download the Resource app today and experience the comfort of ordering your favorite coffee from
-                        wherever you are</p>
-                    <div class="mobileAppBtn">
-                        <button class="btnApple">
-                            <img src="./assets/img/icon_apple.png" alt="apple icon"> 
-                            <p class="buttonText">Available on the<br> <b>App Store</b></p>
-                        </button>
-                        <button class="btnApple">
-                            <img src="./assets/img/icon_google.png" alt="google icon">
-                            <p class="buttonText">Available on the<br> <b>Google Play</b></p>
-                        </button>
+                <div class="menuCards">
+                    <div class="cards">
+                        <img src="../assets/img/coffee-1.jpg" alt="coffee-1">
+                        <div class="cardsText">
+                            <h4>Irish coffee</h4>
+                            <p class="cardText">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                            <h4>$7.00</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="mobileAppScreen">
-                    <img src="./assets/img/mobile-screens.png" alt="mobile screens">
+                    <div class="cards">
+                        <img src="../assets/img/coffee-2.jpg" alt="coffee-2">
+                        <div class="cardsText">
+                            <h4>Kahlua coffee</h4>
+                            <p class="cardText">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                            <h4>$7.00</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-3.jpg" alt="coffee-3">
+                        <div class="cardsText">
+                            <h4>Honey raf</h4>
+                            <p class="cardText">Espresso with frothed milk, cream and aromatic honey</p>
+                            <h4>$5.50</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-4.jpg" alt="coffee-4">
+                        <div class="cardsText">
+                            <h4>Ice cappuccino</h4>
+                            <p class="cardText">Cappuccino with soft thick foam in summer version with ice</p>
+                            <h4>$5.00</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-5.jpg" alt="coffee-5">
+                        <div class="cardsText">
+                            <h4>Espresso</h4>
+                            <p class="cardText">Classic black coffee</p>
+                            <h4>$4.50</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-6.jpg" alt="coffee-6">
+                        <div class="cardsText">
+                            <h4>Latte</h4>
+                            <p class="cardText">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                            <h4>$5.50</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-7.jpg" alt="coffee-7">
+                        <div class="cardsText">
+                            <h4>Latte macchiato</h4>
+                            <p class="cardText">Espresso with frothed milk and chocolate</p>
+                            <h4>$5.50</h4>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="../assets/img/coffee-8.jpg" alt="coffee-8">
+                        <div class="cardsText">
+                            <h4>Coffee with cognac</h4>
+                            <p class="cardText">Fragrant black coffee with cognac and whipped cream</p>
+                            <h4>$6.50</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="contactUs">
@@ -104,16 +123,16 @@
                         <ul class="socialMediaS">
                             <li>
                                 <a href="https://twitter.com/" target="_blank">
-                                    <img src="./assets/img/twitter-icon-light.png" alt="twitter"></a>
+                                    <img src="../assets/img/twitter-icon-light.png" alt="twitter"></a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/" target="_blank">
-                                    <img src="./assets/img/instagram-icon-light.png" alt="instagram">
+                                    <img src="../assets/img/instagram-icon-light.png" alt="instagram">
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
-                                    <img src="./assets/img/facebook-icon-light.png" alt="facebook">
+                                    <img src="../assets/img/facebook-icon-light.png" alt="facebook">
                                 </a>
                             </li>
                         </ul>
@@ -125,15 +144,15 @@
                     <div class="contactInfoHead">Contact us</div>
                     <div class="contactInfoBody">
                         <p class="contactInfoAddres">
-                            <img src="./assets/img/pin-alt.png" alt="maps">
+                            <img src="../assets/img/pin-alt.png" alt="maps">
                             <a href="https://maps.app.goo.gl/DtA5fpxb3TeyY89q7" target="_blank">8558 Green Rd., LA</a>
                         </p>
                         <p class="contactInfoTel">
-                            <img src="./assets/img/phone.png" alt="phone">
+                            <img src="../assets/img/phone.png" alt="phone">
                             <a href="tel:1(603)5550123" type="text/html" target="_blank">+1 (603)555-0123</a>
                         </p>
                         <div class="jobTime">
-                            <img src="./assets/img/clock.png" alt="clock">
+                            <img src="../assets/img/clock.png" alt="clock">
                             <p>Mon-Sat: 9:00 AM – 23:00 PM</p>
                         </div>
                     </div>
