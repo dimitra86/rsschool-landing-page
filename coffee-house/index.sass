@@ -31,6 +31,7 @@ body
 nav ul
   display: flex
   gap: 40px
+  padding-left: 0px
   li 
     list-style: none
     a
@@ -113,12 +114,39 @@ p
   height: 64px
   border-radius: 50px
   border: 0px
-  // display: flex
-  // gap: 8px
-  // justify-content: center
-  // align-items: center
+  cursor: pointer
+  transition-duration: 0.4s
+  display: flex
+  gap: 8px
+  justify-content: center
+  align-items: center
+  text-decoration: none
   img
-    display: none
+    opacity: 0
+    transition-duration: 1s
+  .btnMenuText
+    padding-left: 25px
+    text-decoration: none
+  &:hover
+    img
+      opacity: 1
+    .btnMenuText
+      padding-left: 0px
+
+.btnMenuText
+  color: $text-dark
+  text-align: center
+  font-feature-settings: 'clig' off, 'liga' off
+  font-family: $font-stack
+  font-size: 16px
+  font-style: normal
+  font-weight: 600
+  line-height: 150%
+  text-decoration: none
+  // padding-left: 25px
+  transition-duration: 0.5s
+  // &:hover
+    // padding-left: 0px
 
 
   /*favorite coffee css*/
@@ -148,6 +176,7 @@ h4
   display: flex
   justify-content: space-between
   align-items: center
+ 
 
 .sliderLeft
   rotate: 180deg
@@ -155,6 +184,16 @@ h4
   height: 60px
   padding-top: 0px
   padding-right: 5px
+  transition-duration: 0.4s
+  cursor: pointer
+  // background: $background-container
+  &:hover
+    background: $background-container
+    border-radius: 50px
+    color: $text-light
+    // transition-duration: 0.4s
+
+
 
 .sliderRight
   // rotate: 180deg
@@ -162,6 +201,12 @@ h4
   height: 60px
   padding-bottom: 0px
   padding-right: 5px
+  transition-duration: 0.4s
+  cursor: pointer
+  &:hover
+    background: $background-container
+    border-radius: 50px
+    color: $text-light
 
 .favoriteCoffee
   display: flex
@@ -373,18 +418,36 @@ hr
   li
     list-style: none
 
-.socialMediaS
-  li
-    a
-      img:hover
-        background-color: $background-body
-        color: $text-dark
-        // opacity: 0.5
-        border-radius: 100px
-        transition-duration: 0.4s
-        // flex-shrink: 0
-        // text-decoration: none
 
+.twitterIcon:hover
+  background: $background-body
+  color: $text-dark
+  // opacity: 1
+  border-radius: 100px
+  transition-duration: 1s
+  // transition: .5s ease
+  // backface-visibility: hidden
+  background-image: url(./assets/img/twitter-icon-light.jpg)
+
+.instagramIcon:hover
+  background: $background-body
+  color: $text-dark
+  // opacity: 1
+  border-radius: 100px
+  transition-duration: 1s
+  // transition: .5s ease
+  // backface-visibility: hidden
+  background-image: url(./assets/img/instagram-icon-light.jpg)
+
+.facebookIcon:hover
+  background: $background-body
+  color: $text-dark
+  // opacity: 1
+  border-radius: 100px
+  transition-duration: 1s
+  // transition: .5s ease
+  // backface-visibility: hidden
+  background-image: url(./assets/img/facebook-icon-light.jpg) 
 
 .socialMedia
   margin: 40px 0 0 0
@@ -415,13 +478,9 @@ hr
     font-weight: 600
     line-height: 150%
     transition-duration: 0.4s
-    ::before
-      transition: transform 300ms ease-in-out
-      transform: scaleX(0)
-    :hover::before
-      transform: scaleX(1)
-    :focus::before
-      transform: scaleX(1)
+    &:hover
+      text-decoration: underline 2px
+      transition-duration: 0.4s
 
 
 .contactInfoTel
@@ -434,6 +493,9 @@ hr
     font-style: normal
     font-weight: 600
     line-height: 150%
+    &:hover
+      text-decoration: underline 2px
+      transition-duration: 0.4s
     
 
 .jobTime
@@ -451,6 +513,9 @@ hr
   img
     height: 20px
     width: 20px
+  &:hover
+    text-decoration: underline 2px
+    transition-duration: 0.4s
 
 
 /*css menu*/
