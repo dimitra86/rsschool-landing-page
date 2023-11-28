@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 17px 0 20px 0;
+  margin: 3px 0 20px 0;
 }
 
 nav ul {
@@ -407,7 +407,7 @@ hr {
 }
 
 .offer {
-  padding: 100px 0 81px 100px;
+  padding: 113px 0 81px 100px;
   width: 530px;
 }
 
@@ -424,10 +424,16 @@ hr {
   color: #E1D4C9;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter, serif;
-  font-size: 60px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%;
+  line-height: 35%;
+}
+.offerHead i {
+  font-size: 60px;
+}
+.offerHead h1 {
+  margin: 14px 0 59px 0;
 }
 
 .socialMediaS {
@@ -466,7 +472,7 @@ hr {
 }
 
 .socialMedia {
-  margin: 40px 0 0 0;
+  margin: 56px 0 0 0;
 }
 
 .contactInfoHead {
@@ -540,6 +546,11 @@ hr {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition-duration: 0.4s;
+}
+
+.h1 {
+  font-size: 1em;
+  margin: 0;
 }
 
 /*css menu*/
