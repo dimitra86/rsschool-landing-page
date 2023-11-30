@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -41,6 +46,10 @@ nav ul li :hover {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition-duration: 0.4s;
+}
+
+.burger {
+  display: none;
 }
 
 .coffeeMenu {
@@ -700,4 +709,23 @@ hr {
   font-weight: 400;
   line-height: 150%;
   height: 72px;
+}
+
+/*768px*/
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 688px;
+    margin: 0 40px 0 40px;
+  }
+  nav,
+  .coffeeMenu {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .header {
+    margin-top: 20px 0 16px 0;
+  }
 }/*# sourceMappingURL=index.css.map */

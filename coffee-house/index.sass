@@ -1,25 +1,30 @@
 $text-dark: #403F3D
 $text-light: #E1D4C9
 $text-accent: #B0907A
-$background-body:#E1D4C9
-$background-container:#665F55
-$background-backdrop:rgba(64, 63, 61, 0.80)
-$border-light:#C1B6AD
-$border-dark:#665F55
+$background-body: #E1D4C9
+$background-container: #665F55
+$background-backdrop: rgba(64, 63, 61, 0.80)
+$border-light: #C1B6AD
+$border-dark: #665F55
 $font-stack: Inter, serif
 
-html 
+// @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
+
+html,
+body 
+  overflow-x: hidden
+
+html
   scroll-behavior: smooth
 
-
 body
-  background-color:$background-body
+  background-color: $background-body
   font-family: $font-stack
-  
 
 .wrapper
   width: 1360px
   margin: 0 auto
+
 
 /*header css*/ 
 .header
@@ -32,7 +37,7 @@ nav ul
   display: flex
   gap: 40px
   padding-left: 0px
-  li 
+  li
     list-style: none
     a
       text-decoration: none
@@ -45,8 +50,10 @@ nav ul
     :hover
       text-decoration: underline 2px
       transition-duration: 0.4s
-      
-      
+
+.burger
+  display: none
+
 .coffeeMenu
   display: flex
   gap: 8px
@@ -75,7 +82,6 @@ nav ul
 
 i
   color: $text-accent
-
 
 h2
   color: $text-light
@@ -148,7 +154,6 @@ p
   // &:hover
     // padding-left: 0px
 
-
   /*favorite coffee css*/
 h3
   color: $text-dark
@@ -176,7 +181,6 @@ h4
   display: flex
   justify-content: space-between
   align-items: center
- 
 
 .sliderLeft
   rotate: 180deg
@@ -192,8 +196,6 @@ h4
     border-radius: 50px
     color: $text-light
     // transition-duration: 0.4s
-
-
 
 .sliderRight
   // rotate: 180deg
@@ -225,7 +227,6 @@ h4
     height: 480px
     width: 480px
     margin-bottom: 10px
-
 
 .sliderText
   color: $text-dark
@@ -285,9 +286,6 @@ hr
   width: 660px
   height: 590px
   border-radius: 20px
-  
-
-
 
 .image1
   background-image: url(./assets/img/about-1.jpg)
@@ -312,7 +310,7 @@ hr
   background-position: -33px -148px
 
 .image4
-  background-image: url(./assets/img/about-4.jpg) 
+  background-image: url(./assets/img/about-4.jpg)
   background-position: -33px -68px
 
 /*css mobile app*/
@@ -320,7 +318,7 @@ hr
 .mobileApp
   display: flex
   flex-direction: row
-  gap: 100px 
+  gap: 100px
   margin: 100px 0 0 0
 
 .mobileAppText
@@ -332,7 +330,7 @@ hr
   text-align: justify
   padding-top: 44px
   letter-spacing: -0.2px
-  margin-bottom: 0px 
+  margin-bottom: 0px
 
 .AppText
   color: $text-dark
@@ -358,15 +356,13 @@ hr
 
 .mobileAppBtn
   div:hover
-    
+
     background: $background-container
     // opacity: 0.6
     .buttonText
       color: $text-light
     img
       // background-image: url(./assets/img/icon_google_light.png)
-    
-
 
 .buttonText
   color: $text-dark
@@ -424,7 +420,7 @@ hr
   h1
     margin: 14px 0 59px 0
 
-.socialMediaS 
+.socialMediaS
   display: flex
   flex-direction: row
   align-items: flex-start
@@ -432,7 +428,6 @@ hr
   padding-left: 0px
   li
     list-style: none
-
 
 .twitterIcon:hover
   background: $background-body
@@ -462,7 +457,7 @@ hr
   transition-duration: 1s
   // transition: .5s ease
   // backface-visibility: hidden
-  background-image: url(./assets/img/facebook-icon-light.jpg) 
+  background-image: url(./assets/img/facebook-icon-light.jpg)
 
 .socialMedia
   margin: 56px 0 0 0
@@ -497,7 +492,6 @@ hr
       text-decoration: underline 2px
       transition-duration: 0.4s
 
-
 .contactInfoTel
   a
     text-decoration: none
@@ -511,7 +505,6 @@ hr
     &:hover
       text-decoration: underline 2px
       transition-duration: 0.4s
-    
 
 .jobTime
   display: flex
@@ -599,8 +592,6 @@ hr
     p
       color: $text-light
 
-
-
 .menuTab
   display: flex
   flex-direction: row
@@ -608,7 +599,6 @@ hr
   align-items: center
   gap: 16px
 
-  
 .dessertTab
   display: flex
   border-radius: 100px
@@ -667,3 +657,21 @@ hr
   font-weight: 400
   line-height: 150%
   height: 72px
+
+/*768px*/
+
+@media screen and (max-width: 768px)
+  .wrapper
+    width: 688px
+    margin: 0 40px 0 40px
+
+  nav,
+  .coffeeMenu
+    display: none
+
+  .burger
+    display: inline-block
+    cursor: pointer
+
+  .header
+    margin-top: 20px 0 16px 0
