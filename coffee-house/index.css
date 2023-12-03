@@ -416,7 +416,7 @@ hr {
 }
 
 .offer {
-  padding: 113px 0 81px 100px;
+  padding: 100px 0 81px 100px;
   width: 530px;
 }
 
@@ -442,7 +442,7 @@ hr {
   font-size: 60px;
 }
 .offerHead h1 {
-  margin: 14px 0 59px 0;
+  margin: 0px 0 40px 0;
 }
 
 .socialMediaS {
@@ -481,7 +481,7 @@ hr {
 }
 
 .socialMedia {
-  margin: 56px 0 0 0;
+  margin: 41px 0 0 0;
 }
 
 .contactInfoHead {
@@ -567,10 +567,13 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 39px;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuH3 {
   margin: 0;
+  max-width: 800px;
 }
 
 .coffeeTab {
@@ -711,8 +714,20 @@ hr {
   height: 72px;
 }
 
+.refresh {
+  display: none;
+}
+
+.textH1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
+}
+
 /*768px*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .wrapper {
     width: 688px;
     margin: 0 40px 0 40px;
@@ -787,7 +802,7 @@ hr {
     gap: 84px;
   }
   .offer {
-    padding: 116px 0 0 0;
+    padding: 100px 0 0 0;
     text-align: left;
     width: 568px;
   }
@@ -826,5 +841,110 @@ hr {
   .refresh {
     display: flex;
     justify-content: center;
+  }
+  .textH1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin: 0;
+  }
+  .offerHead h1 {
+    margin: 0;
+  }
+}
+/*380px*/
+@media screen and (max-width: 650px) {
+  .wrapper {
+    max-width: 346px;
+    margin: 0 16px;
+  }
+  .welcomText {
+    width: 316px;
+    padding: 9px 0 0 0;
+  }
+  h2 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+  }
+  .welcom {
+    height: 552px;
+  }
+  h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 40px;
+  }
+  .sliderLeft,
+  .sliderRight {
+    display: none;
+  }
+  .slides {
+    gap: 16px;
+  }
+  .slides img {
+    max-width: 348px;
+    max-height: 348px;
+    margin-bottom: 5px;
+  }
+  .aboutImg {
+    max-width: 348px;
+    max-height: 590px;
+  }
+  .image1,
+  .image4 {
+    max-width: 348px;
+    max-height: 590px;
+    background-position: -189px -68px;
+  }
+  .mobileAppBtn {
+    flex-direction: column;
+  }
+  .mobileAppScreen img {
+    max-width: 348px;
+  }
+  .mobileApp {
+    gap: 40px;
+  }
+  .textH1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin: 0;
+  }
+  .offerHead i {
+    font-size: 32px;
+  }
+  .offerHead h1 {
+    margin: 62px 0 0 0;
+  }
+  .offer {
+    max-width: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .socialMedia {
+    margin: 22px 0 0 0;
+  }
+  .contactInfo {
+    max-width: 316px;
+    padding: 0 0 66px 0;
+  }
+  .contactUs {
+    gap: 22px;
+  }
+  .menuTab {
+    gap: 8px;
+  }
+  .menuCards {
+    gap: 38px;
   }
 }/*# sourceMappingURL=index.css.map */
