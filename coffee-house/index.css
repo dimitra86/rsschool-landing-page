@@ -279,7 +279,7 @@ hr {
 
 /* about css*/
 .aboutHead {
-  text-align: justify;
+  text-align: left;
   letter-spacing: -0.3px;
   margin-bottom: 39px;
 }
@@ -344,7 +344,7 @@ hr {
 }
 
 .mobileAppHead {
-  text-align: justify;
+  text-align: left;
   padding-top: 44px;
   letter-spacing: -0.2px;
   margin-bottom: 0px;
@@ -726,6 +726,74 @@ hr {
     cursor: pointer;
   }
   .header {
-    margin-top: 20px 0 16px 0;
+    margin: 20px 0 17px 0;
+  }
+  .welcomText {
+    margin: 0;
+    width: 568px;
+  }
+  .welcom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: -375px -6px;
+  }
+  .btnMenu img {
+    opacity: 1;
+  }
+  .btnMenu img {
+    opacity: 1;
+  }
+  .btnMenu .btnMenuText {
+    padding-left: 0px;
+  }
+  .aboutImg {
+    width: 688px;
+    height: 590px;
+    border-radius: 20px;
+  }
+  .image1,
+  .image4 {
+    background-position: -19px -68px;
+  }
+  .image2,
+  .image3 {
+    display: none;
+  }
+  .aboutImages {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileApp {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 0;
+  }
+  .mobileAppHead {
+    padding: 0;
+    text-align: left;
+  }
+  .mobileAppScreen {
+    display: flex;
+    justify-content: center;
+  }
+  .contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 100px 0 0 0;
+    gap: 84px;
+  }
+  .offer {
+    padding: 116px 0 0 0;
+    text-align: left;
+    width: 568px;
+  }
+  .contactInfo {
+    padding: 0;
+    width: 568px;
+    padding: 0 0 107px 0;
   }
 }/*# sourceMappingURL=index.css.map */
