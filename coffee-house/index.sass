@@ -748,6 +748,34 @@ hr
     width: 568px
     padding: 0 0 107px 0
 
+  .menuCards
+    display: flex
+    flex-flow: wrap
+    gap: 36px
+    padding: 0 14px
+
+    .off
+      display: none
+
+  .reload
+    width: 60px
+    height: 60px
+    border-radius: 100px
+    border: 1px solid $border-dark
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    &:hover
+      background-color: $background-container
+      transition: 0.5s
+      svg path
+        stroke: $text-light
+        transition: 0.5s
+
+  .refresh
+    display: flex
+    justify-content: center
 
   
 

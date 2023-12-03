@@ -796,4 +796,35 @@ hr {
     width: 568px;
     padding: 0 0 107px 0;
   }
+  .menuCards {
+    display: flex;
+    flex-flow: wrap;
+    gap: 36px;
+    padding: 0 14px;
+  }
+  .menuCards .off {
+    display: none;
+  }
+  .reload {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .reload:hover {
+    background-color: #665F55;
+    transition: 0.5s;
+  }
+  .reload:hover svg path {
+    stroke: #E1D4C9;
+    transition: 0.5s;
+  }
+  .refresh {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=index.css.map */
