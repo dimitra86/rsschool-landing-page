@@ -10,11 +10,13 @@ html {
 body {
   background-color: #E1D4C9;
   font-family: Inter, serif;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-  width: 1360px;
-  margin: 0 auto;
+  max-width: 1360px;
+  margin: 0 40px;
 }
 
 /*header css*/ 
@@ -78,9 +80,8 @@ nav ul li :hover {
   background-image: url(./assets/img/img-hero.svg);
   border-radius: 42px;
   height: 644px;
-  background-position: -70px -40px;
-  background-repeat: no-repeat;
-  max-width: 1360px;
+  background-size: cover;
+  width: inherit;
 }
 
 i {
@@ -100,7 +101,7 @@ h2 {
 
 .welcomText {
   height: 444px;
-  width: 530px;
+  max-width: 530px;
   display: flex;
   margin: 100px 0 0 100px;
   flex-direction: column;
@@ -236,7 +237,7 @@ h4 {
 }
 .slides img {
   height: 480px;
-  width: 480px;
+  max-width: 480px;
   margin-bottom: 10px;
 }
 
@@ -287,6 +288,8 @@ hr {
 .aboutImages {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .aboutImages1 {
@@ -309,7 +312,9 @@ hr {
 
 .image1 {
   background-image: url(./assets/img/about-1.jpg);
-  background-position: -33px -68px;
+  width: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image2 {
@@ -326,7 +331,9 @@ hr {
 
 .image4 {
   background-image: url(./assets/img/about-4.jpg);
-  background-position: -33px -68px;
+  width: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*css mobile app*/
@@ -335,12 +342,15 @@ hr {
   flex-direction: row;
   gap: 100px;
   margin: 100px 0 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mobileAppText {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  max-width: 630px;
 }
 
 .mobileAppHead {
@@ -417,11 +427,11 @@ hr {
 
 .offer {
   padding: 100px 0 81px 100px;
-  width: 530px;
+  max-width: 530px;
 }
 
 .contactInfo {
-  width: 530px;
+  max-width: 530px;
   padding: 71px 100px 81px 0;
   display: flex;
   flex-direction: column;
@@ -683,16 +693,17 @@ hr {
   display: flex;
   gap: 37px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cards {
   border-radius: 40px;
   border: 1px solid #C1B6AD;
-  width: 310px;
+  max-width: 310px;
 }
 .cards img {
   border-radius: 40px;
-  width: 310px;
+  max-width: 310px;
 }
 
 .cardsText {
@@ -727,9 +738,9 @@ hr {
 }
 
 /*768px*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   .wrapper {
-    width: 688px;
+    max-width: 688px;
     margin: 0 40px 0 40px;
   }
   nav,
@@ -745,7 +756,7 @@ hr {
   }
   .welcomText {
     margin: 0;
-    width: 568px;
+    max-width: 568px;
   }
   .welcom {
     display: flex;
@@ -763,13 +774,15 @@ hr {
     padding-left: 0px;
   }
   .aboutImg {
-    width: 688px;
+    max-width: 688px;
     height: 590px;
     border-radius: 20px;
   }
   .image1,
   .image4 {
-    background-position: -19px -68px;
+    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .image2,
   .image3 {
@@ -804,11 +817,11 @@ hr {
   .offer {
     padding: 100px 0 0 0;
     text-align: left;
-    width: 568px;
+    max-width: 568px;
   }
   .contactInfo {
     padding: 0;
-    width: 568px;
+    max-width: 568px;
     padding: 0 0 107px 0;
   }
   .menuCards {
@@ -855,12 +868,55 @@ hr {
 }
 /*380px*/
 @media screen and (max-width: 650px) {
+  .welcomText {
+    max-width: 316px;
+    padding: 9px 0 0 0;
+  }
+  h2 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+  }
+  .welcom {
+    height: 552px;
+  }
+  h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 40px;
+  }
+  .sliderLeft,
+  .sliderRight {
+    display: none;
+  }
+  .slides {
+    gap: 16px;
+  }
+  .slides img {
+    max-width: 348px;
+    max-height: 348px;
+    margin-bottom: 5px;
+  }
+  .mobileAppBtn {
+    flex-direction: column;
+  }
+  .mobileAppScreen img {
+    max-width: 348px;
+  }
+  .mobileApp {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
   .wrapper {
     max-width: 346px;
     margin: 0 16px;
   }
   .welcomText {
-    width: 316px;
+    max-width: 316px;
     padding: 9px 0 0 0;
   }
   h2 {
@@ -899,7 +955,9 @@ hr {
   .image4 {
     max-width: 348px;
     max-height: 590px;
-    background-position: -189px -68px;
+    width: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .mobileAppBtn {
     flex-direction: column;
