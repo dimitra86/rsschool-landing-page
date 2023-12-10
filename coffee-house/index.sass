@@ -193,31 +193,44 @@ h4
 
 .sliderLeft
   rotate: 180deg
+  display: flex
   width: 60px
   height: 60px
+  justify-content: center
+  align-items: center
   padding-top: 0px
-  padding-right: 5px
+  // padding-right: 5px
   transition-duration: 0.4s
   cursor: pointer
+  border-radius: 100px
+  border: 1px solid $border-dark
   // background: $background-container
   &:hover
     background: $background-container
-    border-radius: 50px
-    color: $text-light
+    // border-radius: 50px
+    svg path
+        stroke: $text-light
+        transition: 0.5s
     // transition-duration: 0.4s
 
 .sliderRight
   // rotate: 180deg
+  display: flex
   width: 60px
   height: 60px
-  padding-bottom: 0px
-  padding-right: 5px
+  justify-content: center
+  align-items: center
+  padding-top: 0px
+  // padding-right: 5px
   transition-duration: 0.4s
   cursor: pointer
+  border-radius: 100px
+  border: 1px solid $border-dark
   &:hover
     background: $background-container
-    border-radius: 50px
-    color: $text-light
+    svg path
+      stroke: $text-light
+      transition: 0.5s
 
 .favoriteCoffee
   display: flex
@@ -225,7 +238,9 @@ h4
 //   justify-content: space-between
 //   align-items: center
 
-.slides
+.slides,
+.slides2,
+.slides3
   display: flex
   flex-direction: column
   justify-content: center
@@ -236,6 +251,9 @@ h4
     height: 480px
     max-width: 480px
     margin-bottom: 10px
+    
+
+
 
 .sliderText
   color: $text-dark
@@ -254,7 +272,9 @@ hr
   border-radius: 100px
   background: $border-light
 
-.btnCarousel
+.btnCarousel,
+.btnCarousel2,
+.btnCarousel3
   width: 40px
   height: 4px
   border-radius: 100px
@@ -694,6 +714,13 @@ hr
 .burgerMenuNav
   display: none
 
+.displaynone
+  // display: none !important
+  opacity: 0
+  transform: translateX(-480px)
+  position: absolute
+  transform: 1s
+
 /*768px*/
 
 @media screen and (max-width: 768px)
@@ -958,7 +985,9 @@ hr
   .sliderRight
     display: none
 
-  .slides
+  .slides,
+  .slides2,
+  .slides3
     gap: 16px
     img
       max-width: 348px
@@ -1014,7 +1043,9 @@ hr
   .sliderRight
     display: none
 
-  .slides
+  .slides,
+  .slides2,
+  .slides3
     gap: 16px
     img
       max-width: 348px

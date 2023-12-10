@@ -195,31 +195,43 @@ h4 {
 
 .sliderLeft {
   rotate: 180deg;
+  display: flex;
   width: 60px;
   height: 60px;
+  justify-content: center;
+  align-items: center;
   padding-top: 0px;
-  padding-right: 5px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid #665F55;
 }
 .sliderLeft:hover {
   background: #665F55;
-  border-radius: 50px;
-  color: #E1D4C9;
+}
+.sliderLeft:hover svg path {
+  stroke: #E1D4C9;
+  transition: 0.5s;
 }
 
 .sliderRight {
+  display: flex;
   width: 60px;
   height: 60px;
-  padding-bottom: 0px;
-  padding-right: 5px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid #665F55;
 }
 .sliderRight:hover {
   background: #665F55;
-  border-radius: 50px;
-  color: #E1D4C9;
+}
+.sliderRight:hover svg path {
+  stroke: #E1D4C9;
+  transition: 0.5s;
 }
 
 .favoriteCoffee {
@@ -227,7 +239,9 @@ h4 {
   flex-direction: column;
 }
 
-.slides {
+.slides,
+.slides2,
+.slides3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +249,9 @@ h4 {
   max-width: 480px;
   gap: 16px;
 }
-.slides img {
+.slides img,
+.slides2 img,
+.slides3 img {
   height: 480px;
   max-width: 480px;
   margin-bottom: 10px;
@@ -260,7 +276,9 @@ hr {
   background: #C1B6AD;
 }
 
-.btnCarousel {
+.btnCarousel,
+.btnCarousel2,
+.btnCarousel3 {
   width: 40px;
   height: 4px;
   border-radius: 100px;
@@ -737,6 +755,13 @@ hr {
   display: none;
 }
 
+.displaynone {
+  opacity: 0;
+  transform: translateX(-480px);
+  position: absolute;
+  transform: 1s;
+}
+
 /*768px*/
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -1003,10 +1028,14 @@ hr {
   .sliderRight {
     display: none;
   }
-  .slides {
+  .slides,
+  .slides2,
+  .slides3 {
     gap: 16px;
   }
-  .slides img {
+  .slides img,
+  .slides2 img,
+  .slides3 img {
     max-width: 348px;
     max-height: 348px;
     margin-bottom: 5px;
@@ -1059,10 +1088,14 @@ hr {
   .sliderRight {
     display: none;
   }
-  .slides {
+  .slides,
+  .slides2,
+  .slides3 {
     gap: 16px;
   }
-  .slides img {
+  .slides img,
+  .slides2 img,
+  .slides3 img {
     max-width: 348px;
     max-height: 348px;
     margin-bottom: 5px;
