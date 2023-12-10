@@ -733,8 +733,12 @@ hr {
   margin: 0;
 }
 
+.burgerMenuNav {
+  display: none;
+}
+
 /*768px*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     max-width: 688px;
     margin: 0 40px 0 40px;
@@ -744,8 +748,121 @@ hr {
     display: none;
   }
   .burger {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    transition: 1s;
+  }
+  .burger .twoLine {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .burger .closeBurger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .burger .closeBurger svg {
+    z-index: 0;
+    position: absolute;
+  }
+  .burger .closeBurger svg:first-child {
+    z-index: 1;
+  }
+  .burgerMenuNav {
+    max-width: 100%;
+    background: #E1D4C9;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: transform 1s;
+    top: 100px;
+    padding: 60px 0px;
+    height: 804px;
+    margin: 0px 40px;
+  }
+  .burgerMenuNav ul {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-left: 0px;
+  }
+  .burgerMenuNav ul li {
+    list-style: none;
+  }
+  .burgerMenuNav ul a {
+    text-decoration: none;
+    color: #403F3D;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    cursor: pointer;
+    align-self: stretch;
+  }
+  .burgerMenuNav ul :hover {
+    -webkit-text-decoration: underline 2px;
+            text-decoration: underline 2px;
+    transition-duration: 0.4s;
+  }
+  .active {
+    transform: translateX(0);
+  }
+  .noactive {
+    transform: translateX(100%);
+  }
+  .coffeeMenuBurger {
+    display: flex;
+    gap: 8px;
+    transition: transform 1s;
+  }
+  .coffeeMenuBurger a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #403F3D;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter, serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    transition: transform 1s;
+  }
+  .coffeeMenuBurger :hover {
+    -webkit-text-decoration: underline 2px;
+            text-decoration: underline 2px;
+    transition-duration: 1s;
+  }
+  .coffeeMenuBurger img {
+    width: 40px;
+    height: 40px;
+  }
+  .coffeeMenuBurger :hover {
+    -webkit-text-decoration: underline 2px;
+            text-decoration: underline 2px;
+    transition-duration: 0.4s;
+  }
+  .displaynone {
+    display: none !important;
   }
   .header {
     margin: 20px 0 17px 0;
@@ -1008,5 +1125,9 @@ hr {
   }
   .menuCards {
     gap: 38px;
+  }
+  .burgerMenuNav {
+    width: 100%;
+    margin: 0px 16px;
   }
 }/*# sourceMappingURL=index.css.map */
