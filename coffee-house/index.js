@@ -12,6 +12,9 @@ const sliderRight=document.querySelector('.sliderRight');
 const btnCarousel=document.querySelector('.btnCarousel');
 const btnCarousel2=document.querySelector('.btnCarousel2');
 const btnCarousel3=document.querySelector('.btnCarousel3');
+const coffeeTab=document.querySelector('.coffeeTab');
+const teaTab=document.querySelector('.teaTab');
+const dessertTab=document.querySelector('.dessertTab');
 
 
 //burger menu function
@@ -127,5 +130,32 @@ sliderLeft.addEventListener('click', function (e) {
   }
 })
 
-setInterval(changeImage, 5000);
-console.log (curPos);
+setInterval(changeImage, 5000); //start change image slider
+// console.log (curPos);
+
+
+//page menu tab
+coffeeTab.addEventListener('click', function (e) {
+  if(coffeeTab.classList=='activeTab'){}
+  else if (teaTab.classList=='activeTab'){
+    teaTab.classList.remove('activeTab');
+    coffeeTab.classList.add('activeTab');
+  }
+  else if (dessertTab.classList=='activeTab'){
+    coffeeTab.classList.add('activeTab');
+    dessertTab.classList.remove('activeTab');
+  }
+})
+
+teaTab.addEventListener('click', function (e) {
+  console.log('click');
+  if(teaTab.classList=='activeTab'){}
+  else if (coffeeTab.classList=='activeTab'){
+    coffeeTab.classList.remove('activeTab');
+    teaTab.classList.add('activeTab');
+  }
+  else if (dessertTab.classList=='activeTab'){
+    tea.classList.add('activeTab');
+    dessertTab.classList.remove('activeTab');
+  }
+})

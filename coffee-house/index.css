@@ -603,9 +603,10 @@ hr {
 .coffeeTab {
   display: flex;
   border-radius: 100px;
-  background: #665F55;
   padding: 8px 16px 8px 8px;
   gap: 8px;
+  cursor: pointer;
+  border: 1px solid #C1B6AD;
 }
 .coffeeTab img {
   padding: 3px 7px;
@@ -617,34 +618,6 @@ hr {
   height: 24px;
 }
 .coffeeTab p {
-  color: #E1D4C9;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  padding-top: 3px;
-}
-
-.teaTab {
-  display: flex;
-  border-radius: 100px;
-  border: 1px solid #C1B6AD;
-  padding: 8px 16px 8px 8px;
-  gap: 8px;
-  cursor: pointer;
-}
-.teaTab img {
-  padding: 3px 7px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background: #C1B6AD;
-  width: 16px;
-  height: 24px;
-}
-.teaTab p {
   color: #403F3D;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter, serif;
@@ -654,10 +627,57 @@ hr {
   line-height: 150%;
   padding-top: 3px;
 }
-.teaTab:hover {
+.coffeeTab:hover {
   background: #665F55;
 }
-.teaTab:hover p {
+.coffeeTab:hover p {
+  color: #E1D4C9;
+}
+
+.teaTab,
+.dessertTab {
+  display: flex;
+  border-radius: 100px;
+  border: 1px solid #C1B6AD;
+  padding: 8px 16px 8px 8px;
+  gap: 8px;
+  cursor: pointer;
+}
+.teaTab img,
+.dessertTab img {
+  padding: 3px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #C1B6AD;
+  width: 16px;
+  height: 24px;
+}
+.teaTab p,
+.dessertTab p {
+  color: #403F3D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 3px;
+}
+.teaTab:hover,
+.dessertTab:hover {
+  background: #665F55;
+}
+.teaTab:hover p,
+.dessertTab:hover p {
+  color: #E1D4C9;
+}
+
+.activeTab {
+  background: #665F55;
+  cursor: auto;
+}
+.activeTab p {
   color: #E1D4C9;
 }
 
@@ -669,41 +689,9 @@ hr {
   gap: 16px;
 }
 
-.dessertTab {
-  display: flex;
-  border-radius: 100px;
-  border: 1px solid #C1B6AD;
-  padding: 8px 16px 8px 8px;
-  gap: 8px;
-  cursor: pointer;
-}
-.dessertTab img {
-  padding: 3px 7px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background: #C1B6AD;
-  width: 16px;
-  height: 24px;
-}
-.dessertTab p {
-  color: #403F3D;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter, serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  padding-top: 3px;
-}
-.dessertTab:hover {
-  background: #665F55;
-}
-.dessertTab:hover p {
-  color: #E1D4C9;
-}
-
-.menuCards {
+.menuCards,
+.menuCardsTea,
+.menuCardsDessets {
   display: flex;
   gap: 37px;
   flex-wrap: wrap;
@@ -756,10 +744,7 @@ hr {
 }
 
 .displaynone {
-  opacity: 0;
-  transform: translateX(-480px);
-  position: absolute;
-  transform: 1s;
+  display: none !important;
 }
 
 /*768px*/
@@ -960,13 +945,17 @@ hr {
     max-width: 568px;
     padding: 0 0 107px 60px;
   }
-  .menuCards {
+  .menuCards,
+  .menuCardsDessets,
+  .menuCardsTea {
     display: flex;
     flex-flow: wrap;
     gap: 36px;
     padding: 0 14px;
   }
-  .menuCards .off {
+  .menuCards .off,
+  .menuCardsDessets .off,
+  .menuCardsTea .off {
     display: none;
   }
   .reload {
@@ -1156,7 +1145,9 @@ hr {
   .menuTab {
     gap: 8px;
   }
-  .menuCards {
+  .menuCards,
+  .menuCardsDessets,
+  .menuCardsTea {
     gap: 38px;
   }
   .burgerMenuNav {

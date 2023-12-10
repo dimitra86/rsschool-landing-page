@@ -584,40 +584,17 @@ hr
 .coffeeTab
   display: flex
   border-radius: 100px
-  background: $background-container
+  // background: $background-container
   padding: 8px 16px 8px 8px
   gap: 8px
+  cursor: pointer
+  border: 1px solid $border-light
   img
     padding: 3px 7px
     justify-content: center
     align-items: center
     border-radius: 100px
     background: $background-body
-    width: 16px
-    height: 24px
-  p
-    color: $text-light
-    font-feature-settings: 'clig' off, 'liga' off
-    font-family: $font-stack
-    font-size: 16px
-    font-style: normal
-    font-weight: 600
-    line-height: 150%
-    padding-top: 3px
-
-.teaTab
-  display: flex
-  border-radius: 100px
-  border: 1px solid $border-light
-  padding: 8px 16px 8px 8px
-  gap: 8px
-  cursor: pointer
-  img
-    padding: 3px 7px
-    justify-content: center
-    align-items: center
-    border-radius: 100px
-    background: $border-light
     width: 16px
     height: 24px
   p
@@ -634,13 +611,7 @@ hr
     p
       color: $text-light
 
-.menuTab
-  display: flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  gap: 16px
-
+.teaTab,
 .dessertTab
   display: flex
   border-radius: 100px
@@ -670,7 +641,24 @@ hr
     p
       color: $text-light
 
-.menuCards
+.activeTab
+  background: $background-container
+  cursor: auto
+  p
+    color: $text-light
+
+.menuTab
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 16px
+
+
+
+.menuCards,
+.menuCardsTea,
+.menuCardsDessets
   display: flex
   gap: 37px
   flex-wrap: wrap
@@ -715,11 +703,11 @@ hr
   display: none
 
 .displaynone
-  // display: none !important
-  opacity: 0
-  transform: translateX(-480px)
-  position: absolute
-  transform: 1s
+  display: none !important
+  // opacity: 0
+  // transform: translateX(-480px)
+  // position: absolute
+  // transform: 1s
 
 /*768px*/
 
@@ -918,7 +906,9 @@ hr
     max-width: 568px
     padding: 0 0 107px 60px
 
-  .menuCards
+  .menuCards,
+  .menuCardsDessets,
+  .menuCardsTea
     display: flex
     flex-flow: wrap
     gap: 36px
@@ -1111,7 +1101,9 @@ hr
   .menuTab
     gap: 8px
 
-  .menuCards
+  .menuCards,
+  .menuCardsDessets,
+  .menuCardsTea
     gap: 38px
 
   .burgerMenuNav
