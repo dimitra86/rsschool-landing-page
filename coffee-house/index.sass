@@ -80,7 +80,8 @@ nav ul
 
 /*welcom css*/
 .welcom
-  background-image: url(./assets/img/img-hero.svg)
+  // background-image: url(./assets/img/img-hero.svg)
+  // background-image: url(./assets/video/coffee.mp4)
   border-radius: 42px
   height: 644px
   // background-position: -70px -40px
@@ -88,6 +89,13 @@ nav ul
   // max-width: 1360px
   background-size: cover
   width: inherit
+  video
+    position: absolute
+    z-index: -100
+    border-radius: 42px
+    height: 644px
+    display: flex
+    align-items: center
 
 i
   color: $text-accent
@@ -761,7 +769,7 @@ hr
     z-index: 100
     top: 0px
     right: 0px
-    transform: translateX(100%)
+    transform: translateX(200%)
     transition: transform 1s
     top: 100px
     padding: 60px 0px
@@ -838,6 +846,11 @@ hr
     justify-content: center
     align-items: center
     background-position: -375px -6px
+    video
+      display: flex
+      justify-content: center
+      align-items: center
+
   
   .btnMenu
     img

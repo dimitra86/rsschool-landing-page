@@ -77,11 +77,18 @@ nav ul li :hover {
 
 /*welcom css*/
 .welcom {
-  background-image: url(./assets/img/img-hero.svg);
   border-radius: 42px;
   height: 644px;
   background-size: cover;
   width: inherit;
+}
+.welcom video {
+  position: absolute;
+  z-index: -100;
+  border-radius: 42px;
+  height: 644px;
+  display: flex;
+  align-items: center;
 }
 
 i {
@@ -801,7 +808,7 @@ hr {
     z-index: 100;
     top: 0px;
     right: 0px;
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 1s;
     top: 100px;
     padding: 60px 0px;
@@ -886,6 +893,11 @@ hr {
     justify-content: center;
     align-items: center;
     background-position: -375px -6px;
+  }
+  .welcom video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btnMenu img {
     opacity: 1;
