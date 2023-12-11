@@ -19,7 +19,9 @@ const menuCards=document.querySelector('.menuCards');
 const menuCardsTea=document.querySelector('.menuCardsTea');
 const menuCardsDessets=document.querySelector('.menuCardsDessets');
 const refresh=document.querySelector('.refresh');
-const cards=document.querySelectorAll('.cards');
+const cards=document.querySelectorAll('div.menuCards>div.cards');
+const cardsTea=document.querySelectorAll('div.menuCardsTea>div.cards');
+const cardsDesserts=document.querySelectorAll('div.menuCardsDessets>div.cards');
 
 
 //burger menu function
@@ -94,13 +96,31 @@ dessertTab.addEventListener('click', function (e) {
 })
 
 refresh.addEventListener('click', function (e) {
+console.log (dessertTab.classList=='dessertTab activeTab');
+  if(coffeeTab.classList=='coffeeTab activeTab'){
+    cards.forEach(e=>{
+      e.classList.value='cards';
+      refresh.classList.add('displaynone');
+    
+      }
+    )
+  }
   // cards.classList.remove('off');
+  else if(teaTab.classList=='teaTab activeTab'){
+    cardsTea.forEach(e=>{
+      e.classList.value='cards';
+      refresh.classList.add('displaynone');
+    
+      }
+    )
+  }
 
-  console.log(cards);
-  // if(cards.classList='cards off'){
-  //  cards.classList.remove('off');
-  // }
-  // else {
-  //   console.log('else');
-  // }
+  else if(dessertTab.classList=='dessertTab activeTab'){
+    cardsDesserts.forEach(e=>{
+      e.classList.value='cards';
+      refresh.classList.add('displaynone');
+    
+      }
+    )
+  }
 })
