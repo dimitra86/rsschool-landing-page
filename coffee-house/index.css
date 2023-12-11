@@ -91,6 +91,11 @@ nav ul li :hover {
   align-items: center;
 }
 
+.welcomVideo {
+  display: flex;
+  justify-content: center;
+}
+
 i {
   color: #B0907A;
 }
@@ -759,6 +764,14 @@ hr {
   .wrapper {
     max-width: 688px;
     margin: 0 40px 0 40px;
+  }
+  .welcomVideo {
+    display: flex;
+    justify-content: center;
+  }
+  .welcomVideo video {
+    max-width: 688px;
+    height: 900px;
   }
   nav,
   .coffeeMenu {
